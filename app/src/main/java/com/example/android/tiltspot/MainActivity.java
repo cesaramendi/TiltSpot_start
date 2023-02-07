@@ -133,10 +133,8 @@ public class MainActivity extends AppCompatActivity
         //3. Para obtener el tipo de sensor del objeto de evento del sensor:
         int sensorType = sensorEvent.sensor.getType();
 
-        /*
-         4. pruebas para los tipos de sensor de acelerómetro y magnetómetro,
-         y clone los datos del evento en las variables apropiadas:
-        */
+        //4. pruebas para los tipos de sensor de acelerómetro y magnetómetro,
+        // y clone los datos del evento en las variables apropiadas:
         switch (sensorType) {
             case Sensor.TYPE_ACCELEROMETER:
                 mAccelerometerData = sensorEvent.values.clone();
